@@ -31,7 +31,6 @@ gem 'jquery-rails'
 # To use debugger
 gem 'ruby-debug'
 
-gem 'spree', :path => '../spree'
-# gem 'spree_blue_theme', :path => '../spree_blue_theme'
-gem 'spree_spraycan', :path => '../spree_spraycan'
-gem 'spraycan', :path => '../spraycan'
+gem 'spree', :git => 'git://github.com/spree/spree.git'
+gem 'spree_spraycan', :git => 'git://github.com/railsdog/spree_spraycan.git'
+gem 'spraycan', :git => 'git://github.com/railsdog/spraycan.git', :branch => 'tweaker'
