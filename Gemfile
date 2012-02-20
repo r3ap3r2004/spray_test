@@ -14,10 +14,16 @@ end
 gem 'jquery-rails'
 
 gem 'spree', :git => 'git://github.com/spree/spree.git', :branch => '1-0-stable'
-gem 'spree_spraycan', :path => '../spree_spraycan' #:git => 'git://github.com/railsdog/spree_spraycan.git'
-# gem 'spraycan', :git => 'git://github.com/railsdog/spraycan.git', :branch => 'tweaker'
-gem 'spraycan', :path => '../spraycan'
-gem 'deface', :path => '../deface'
+
+
+# gem 'spree_spraycan', :path => '../spree_spraycan' 
+gem 'spree_spraycan', :git => 'git://github.com/railsdog/spree_spraycan.git'
+
+# gem 'spraycan', :path => '../spraycan'
+gem 'spraycan', :git => 'git://github.com/railsdog/spraycan.git', :branch => 'tweaker'
+
+# gem 'deface', :path => '../deface'
+gem 'deface', :git => 'git://github.com/railsdog/deface.git', :branch => 'haml'
 
 group :production do
   gem 'unicorn'

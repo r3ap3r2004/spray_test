@@ -1,4 +1,33 @@
 GIT
+  remote: git://github.com/railsdog/deface.git
+  revision: 94f036e0e4d69c7b88d9bf894fc43f759341161c
+  branch: haml
+  specs:
+    deface (0.7.2)
+      nokogiri (~> 1.5.0)
+      rails (>= 3.0.9)
+
+GIT
+  remote: git://github.com/railsdog/spraycan.git
+  revision: 27c12aa606040e32315eb0799f0de6a2b60ed3f5
+  branch: tweaker
+  specs:
+    spraycan (0.3.0)
+      acts_as_list (>= 0.1.2)
+      carrierwave (= 0.5.4)
+      deface (>= 0.6.1)
+      ejs (= 1.0.0)
+      guid (= 0.1.1)
+      rabl (= 0.2.8)
+
+GIT
+  remote: git://github.com/railsdog/spree_spraycan.git
+  revision: cba91d5d669a53301f2a66a5279acde4e742002b
+  specs:
+    spree_spraycan (0.60.99)
+      spraycan (>= 0.3.0)
+
+GIT
   remote: git://github.com/spree/spree.git
   revision: 3e8f9585f9003bfe60ee19461f7d0b0a6d8e1881
   branch: 1-0-stable
@@ -41,30 +70,6 @@ GIT
       spree_core (= 1.0.0)
     spree_sample (1.0.0)
       spree_core (= 1.0.0)
-
-PATH
-  remote: ../deface
-  specs:
-    deface (0.7.2)
-      nokogiri (~> 1.5.0)
-      rails (>= 3.0.9)
-
-PATH
-  remote: ../spraycan
-  specs:
-    spraycan (0.3.0)
-      acts_as_list (>= 0.1.2)
-      carrierwave (= 0.5.4)
-      deface (>= 0.6.1)
-      ejs (= 1.0.0)
-      guid (= 0.1.1)
-      rabl (= 0.2.8)
-
-PATH
-  remote: ../spree_spraycan
-  specs:
-    spree_spraycan (0.60.99)
-      spraycan (>= 0.3.0)
 
 GEM
   remote: http://rubygems.org/

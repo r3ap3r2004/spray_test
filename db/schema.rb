@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111223113238) do
+ActiveRecord::Schema.define(:version => 20120220121016) do
 
   create_table "spraycan_files", :force => true do |t|
     t.string   "file"
@@ -79,6 +80,7 @@ ActiveRecord::Schema.define(:version => 20111223113238) do
     t.string   "name"
     t.string   "event_name"
     t.string   "type"
+    t.string   "path"
   end
 
   create_table "spree_addresses", :force => true do |t|
@@ -310,6 +312,14 @@ ActiveRecord::Schema.define(:version => 20111223113238) do
     t.string   "avs_response"
   end
 
+  create_table "spree_pending_promotions", :force => true do |t|
+    t.integer "user_id"
+    t.integer "promotion_id"
+  end
+
+  add_index "spree_pending_promotions", ["promotion_id"], :name => "index_spree_pending_promotions_on_promotion_id"
+  add_index "spree_pending_promotions", ["user_id"], :name => "index_spree_pending_promotions_on_user_id"
+
   create_table "spree_preferences", :force => true do |t|
     t.text     "value"
     t.datetime "created_at"
@@ -497,6 +507,10 @@ ActiveRecord::Schema.define(:version => 20111223113238) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "display_on"
+    t.integer  "shipping_category_id"
+    t.boolean  "match_none"
+    t.boolean  "match_all"
+    t.boolean  "match_one"
   end
 
   create_table "spree_state_events", :force => true do |t|
@@ -522,6 +536,7 @@ ActiveRecord::Schema.define(:version => 20111223113238) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "is_default",  :default => false
+    t.datetime "deleted_at"
   end
 
   create_table "spree_tax_rates", :force => true do |t|
