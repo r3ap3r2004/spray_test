@@ -23,6 +23,13 @@ GIT
       sass (= 3.1.15)
 
 GIT
+  remote: git://github.com/railsdog/spree_spraycan.git
+  revision: ac225ff70cfb5442561bf8c1074624a038b52247
+  specs:
+    spree_spraycan (0.60.99)
+      spraycan (>= 0.3.0)
+
+GIT
   remote: git://github.com/spree/spree.git
   revision: 091062e16e76feea3dca9c55c30b806ef595636a
   branch: 1-0-stable
@@ -65,12 +72,6 @@ GIT
       spree_core (= 1.0.0)
     spree_sample (1.0.0)
       spree_core (= 1.0.0)
-
-PATH
-  remote: ../spree_spraycan
-  specs:
-    spree_spraycan (0.60.99)
-      spraycan (>= 0.3.0)
 
 GEM
   remote: http://rubygems.org/
