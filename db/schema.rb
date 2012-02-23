@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120220121016) do
+ActiveRecord::Schema.define(:version => 20120220172862) do
 
   create_table "spraycan_files", :force => true do |t|
     t.string   "file"
@@ -80,6 +80,10 @@ ActiveRecord::Schema.define(:version => 20120220121016) do
     t.string   "name"
     t.string   "event_name"
     t.string   "type"
+    t.integer  "usage_limit"
+    t.string   "match_policy", :default => "all"
+    t.string   "code"
+    t.boolean  "advertise",    :default => false
     t.string   "path"
   end
 
@@ -321,12 +325,14 @@ ActiveRecord::Schema.define(:version => 20120220121016) do
   add_index "spree_pending_promotions", ["user_id"], :name => "index_spree_pending_promotions_on_user_id"
 
   create_table "spree_preferences", :force => true do |t|
+    t.string   "name"
+    t.integer  "owner_id"
+    t.string   "owner_type"
     t.text     "value"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "key"
     t.string   "value_type"
-    t.string   "group"
   end
 
   add_index "spree_preferences", ["key"], :name => "index_spree_preferences_on_key", :unique => true
