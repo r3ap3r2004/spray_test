@@ -29,7 +29,7 @@ group :production do
   gem 'unicorn'
   gem 'mysql2'
   gem 'foreman'
-  # gem 'therubyracer'
+  gem 'therubyracer'
 end
 
 group :development do
