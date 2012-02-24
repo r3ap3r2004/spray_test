@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git://github.com/railsdog/spraycan.git
-  revision: 3a38c5c03bd1f3c25293c4cd1f7e19ae755a53c7
+  revision: 6d31c6568c004312a67ed420e80e5713028a1372
   branch: tweaker
   specs:
     spraycan (0.3.0)
