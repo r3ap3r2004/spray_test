@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/railsdog/deface.git
-  revision: 04ada87494e3d436727329092f43f7a0b4946bf0
+  revision: f405217afa99f9ca777944afb34a195662684d7a
   branch: haml
   specs:
     deface (0.7.2)
