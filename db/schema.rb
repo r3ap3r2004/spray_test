@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120220172862) do
+ActiveRecord::Schema.define(:version => 20120307091511) do
 
   create_table "spraycan_files", :force => true do |t|
     t.string   "file"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20120220172862) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
+    t.string   "guid"
   end
 
   create_table "spraycan_javascripts", :force => true do |t|
@@ -29,11 +30,27 @@ ActiveRecord::Schema.define(:version => 20120220172862) do
     t.datetime "updated_at"
   end
 
+  create_table "spraycan_packs", :force => true do |t|
+    t.string   "name"
+    t.boolean  "active",          :default => false
+    t.string   "guid"
+    t.string   "palette_guid"
+    t.text     "preference_hash"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "spraycan_packs_themes", :id => false, :force => true do |t|
+    t.integer "pack_id"
+    t.integer "theme_id"
+  end
+
   create_table "spraycan_palettes", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "active",     :default => false
+    t.string   "guid"
   end
 
   create_table "spraycan_stylesheets", :force => true do |t|
