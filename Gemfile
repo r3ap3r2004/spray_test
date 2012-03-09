@@ -19,11 +19,11 @@ gem 'spree', :git => 'git://github.com/spree/spree.git', :branch => '1-0-stable'
 # gem 'spree_spraycan', :path => '../spree_spraycan' 
 gem 'spree_spraycan', :git => 'git://github.com/railsdog/spree_spraycan.git'
 
-gem 'spraycan', :path => '../spraycan'
-# gem 'spraycan', :git => 'git://github.com/railsdog/spraycan.git', :branch => 'tweaker'
+# gem 'spraycan', :path => '../spraycan'
+gem 'spraycan', :git => 'git://github.com/railsdog/spraycan.git'
 
 # gem 'deface', :path => '../deface'
-gem 'deface', :git => 'git://github.com/railsdog/deface.git', :branch => 'haml'
+gem 'deface', :git => 'git://github.com/railsdog/deface.git'
 
 group :production do
   gem 'unicorn'
@@ -35,7 +35,6 @@ end
 group :development do
   gem 'capistrano'
   gem 'mysql2'
-  gem 'ruby-debug19'
   gem 'yaml_db'
 end
 

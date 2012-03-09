@@ -1,11 +1,24 @@
 GIT
   remote: git://github.com/railsdog/deface.git
-  revision: 597556680c5fca505215fae7769e58965e99ca87
-  branch: haml
+  revision: d749e05cc971411026e5dea24afb304e8125d360
   specs:
-    deface (0.7.2)
+    deface (0.8.0)
       nokogiri (~> 1.5.0)
       rails (>= 3.0.9)
+
+GIT
+  remote: git://github.com/railsdog/spraycan.git
+  revision: b64cb3e91f6cd7d1dc1eea1472eeeeccdff98220
+  specs:
+    spraycan (0.3.0)
+      acts_as_list (>= 0.1.2)
+      acts_as_list (>= 0.1.2)
+      carrierwave (= 0.5.4)
+      deface (>= 0.6.1)
+      ejs (= 1.0.0)
+      guid (= 0.1.1)
+      rabl (= 0.6.0)
+      sass (= 3.1.15)
 
 GIT
   remote: git://github.com/railsdog/spree_spraycan.git
@@ -16,27 +29,26 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree.git
-  revision: 1f9eb090664a36ac1c982bfb81422c40372e90f4
+  revision: cfdb50b10ce048fad55608766b370cf9d3d6772c
   branch: 1-0-stable
   specs:
-    spree (1.0.0)
-      spree_api (= 1.0.0)
-      spree_auth (= 1.0.0)
-      spree_cmd (= 1.0.0)
-      spree_core (= 1.0.0)
-      spree_dash (= 1.0.0)
-      spree_promo (= 1.0.0)
-      spree_sample (= 1.0.0)
-    spree_api (1.0.0)
-      spree_auth (= 1.0.0)
-      spree_core (= 1.0.0)
-    spree_auth (1.0.0)
+    spree (1.0.2.beta)
+      spree_api (= 1.0.2.beta)
+      spree_auth (= 1.0.2.beta)
+      spree_cmd (= 1.0.2.beta)
+      spree_core (= 1.0.2.beta)
+      spree_dash (= 1.0.2.beta)
+      spree_promo (= 1.0.2.beta)
+      spree_sample (= 1.0.2.beta)
+    spree_api (1.0.2.beta)
+      spree_auth (= 1.0.2.beta)
+      spree_core (= 1.0.2.beta)
+    spree_auth (1.0.2.beta)
       cancan (= 1.6.7)
       devise (= 1.4.8)
-      spree_core (= 1.0.0)
-    spree_cmd (1.0.0)
-      rails (>= 3.1.1, <= 3.1.3)
-    spree_core (1.0.0)
+      spree_core (= 1.0.2.beta)
+    spree_cmd (1.0.2.beta)
+    spree_core (1.0.2.beta)
       activemerchant (= 1.20.1)
       acts_as_list (= 0.1.4)
       deface (>= 0.7.2)
@@ -47,29 +59,16 @@ GIT
       meta_search (= 1.1.1)
       nested_set (= 1.6.8)
       paperclip (= 2.5.0)
-      rails (>= 3.1.1, <= 3.1.3)
+      rails (>= 3.1.1, <= 3.1.4)
       state_machine (= 1.1.1)
       stringex (~> 1.3.0)
-    spree_dash (1.0.0)
-      spree_core (= 1.0.0)
-    spree_promo (1.0.0)
-      spree_auth (= 1.0.0)
-      spree_core (= 1.0.0)
-    spree_sample (1.0.0)
-      spree_core (= 1.0.0)
-
-PATH
-  remote: ../spraycan
-  specs:
-    spraycan (0.3.0)
-      acts_as_list (>= 0.1.2)
-      acts_as_list (>= 0.1.2)
-      carrierwave (= 0.5.4)
-      deface (>= 0.6.1)
-      ejs (= 1.0.0)
-      guid (= 0.1.1)
-      rabl (= 0.2.8)
-      sass (= 3.1.15)
+    spree_dash (1.0.2.beta)
+      spree_core (= 1.0.2.beta)
+    spree_promo (1.0.2.beta)
+      spree_auth (= 1.0.2.beta)
+      spree_core (= 1.0.2.beta)
+    spree_sample (1.0.2.beta)
+      spree_core (= 1.0.2.beta)
 
 GEM
   remote: http://rubygems.org/
@@ -114,10 +113,9 @@ GEM
     activesupport (3.1.3)
       multi_json (~> 1.0)
     acts_as_list (0.1.4)
-    archive-tar-minitar (0.5.2)
     arel (2.2.3)
     bcrypt-ruby (3.0.1)
-    braintree (2.13.4)
+    braintree (2.14.0)
       builder (>= 2.0.0)
     builder (3.0.0)
     cancan (1.6.7)
@@ -138,7 +136,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.2.0)
-    columnize (0.3.6)
     compass (0.12.rc.1)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
@@ -154,7 +151,7 @@ GEM
     execjs (1.3.0)
       multi_json (~> 1.0)
     ffaker (1.12.1)
-    foreman (0.39.0)
+    foreman (0.40.0)
       term-ansicolor (~> 1.0.7)
       thor (>= 0.13.6)
     fssm (0.2.8.1)
@@ -172,9 +169,7 @@ GEM
       railties (>= 3.0.0)
     kgio (2.7.2)
     libv8 (3.3.10.4)
-    linecache19 (0.5.12)
-      ruby_core_source (>= 0.1.4)
-    mail (2.3.0)
+    mail (2.3.2)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -186,7 +181,7 @@ GEM
     mime-types (1.17.2)
     money (3.7.1)
       i18n (~> 0.4)
-    multi_json (1.1.0)
+    multi_json (1.0.4)
     mysql2 (0.3.11)
     nested_set (1.6.8)
       activerecord (>= 3.0.0)
@@ -198,7 +193,7 @@ GEM
     net-ssh (2.3.0)
     net-ssh-gateway (1.1.0)
       net-ssh (>= 1.99.1)
-    nokogiri (1.5.0)
+    nokogiri (1.5.1)
     orm_adapter (0.0.6)
     paperclip (2.5.0)
       activerecord (>= 2.3.0)
@@ -208,9 +203,11 @@ GEM
     polyamorous (0.5.0)
       activerecord (~> 3.0)
     polyglot (0.3.3)
-    rabl (0.2.8)
+    rabl (0.6.0)
+      activesupport (>= 2.3.14)
+      multi_json (~> 1.0.3)
     rack (1.3.6)
-    rack-cache (1.1)
+    rack-cache (1.2)
       rack (>= 0.4)
     rack-mount (0.8.3)
       rack (>= 1.0.0)
@@ -237,16 +234,6 @@ GEM
     rake (0.9.2.2)
     rdoc (3.12)
       json (~> 1.4)
-    ruby-debug-base19 (0.11.25)
-      columnize (>= 0.3.1)
-      linecache19 (>= 0.5.11)
-      ruby_core_source (>= 0.1.4)
-    ruby-debug19 (0.11.6)
-      columnize (>= 0.3.1)
-      linecache19 (>= 0.5.11)
-      ruby-debug-base19 (>= 0.11.19)
-    ruby_core_source (0.1.5)
-      archive-tar-minitar (>= 0.5.2)
     sass (3.1.15)
     sass-rails (3.1.5)
       actionpack (~> 3.1.0)
@@ -267,7 +254,7 @@ GEM
     treetop (1.4.10)
       polyglot
       polyglot (>= 0.3.1)
-    tzinfo (0.3.31)
+    tzinfo (0.3.32)
     uglifier (1.2.3)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
@@ -292,7 +279,6 @@ DEPENDENCIES
   json
   mysql2
   rails (= 3.1.3)
-  ruby-debug19
   sass-rails (~> 3.1.4)
   spraycan!
   spree!
