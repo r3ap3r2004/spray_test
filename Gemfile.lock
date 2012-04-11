@@ -30,8 +30,8 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree.git
-  revision: 024b22a56929468548eca795407d6b2001a836de
-  branch: 1-1-stable
+  revision: 27bca97223aa0ac47638a1e2f892527c356417f0
+  branch: 1-1-stable-before-force
   specs:
     spree (1.1.0.rc1)
       spree_api (= 1.1.0.rc1)
