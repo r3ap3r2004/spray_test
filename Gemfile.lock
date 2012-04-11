@@ -1,6 +1,7 @@
 GIT
   remote: git://github.com/railsdog/deface.git
-  revision: 0736efb404cb3d15e331adea3f5c09584916663e
+  revision: 8146c246def16a4011d40b3aac5d0f924732e470
+  branch: dsl
   specs:
     deface (0.8.0)
       nokogiri (~> 1.5.0)
@@ -8,7 +9,7 @@ GIT
 
 GIT
   remote: git://github.com/railsdog/spraycan.git
-  revision: 7f659ff0b282a240f3a3cb10c8a2eccff4887fbd
+  revision: faa2c3be621f4427648c1d02475208eb98f0a32e
   specs:
     spraycan (0.3.0)
       acts_as_list (>= 0.1.2)
@@ -29,7 +30,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree.git
-  revision: 7f458cf6f9f69f9fa411f1400b8063b44eece8b0
+  revision: 024b22a56929468548eca795407d6b2001a836de
   branch: 1-1-stable
   specs:
     spree (1.1.0.rc1)
@@ -143,7 +144,7 @@ GEM
     coffee-script (2.2.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.2.0)
+    coffee-script-source (1.3.1)
     compass (0.12.1)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)

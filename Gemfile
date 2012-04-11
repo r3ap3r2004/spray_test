@@ -24,7 +24,7 @@ gem 'spree_spraycan', :git => 'git://github.com/railsdog/spree_spraycan.git'
 gem 'spraycan', :git => 'git://github.com/railsdog/spraycan.git'
 
 # gem 'deface', :path => '../deface'
-gem 'deface', :git => 'git://github.com/railsdog/deface.git'
+gem 'deface', :git => 'git://github.com/railsdog/deface.git', :branch => 'dsl'
 
 group :production do
   gem 'unicorn'
