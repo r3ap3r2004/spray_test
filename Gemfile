@@ -14,7 +14,7 @@ end
 
 gem 'jquery-rails'
 
-gem 'spree', :git => 'git://github.com/spree/spree.git', :branch => '1-1-stable-before-force'
+gem 'spree', :git => 'git://github.com/spree/spree.git', :branch => '1-1-stable'
 
 
 # gem 'spree_spraycan', :path => '../spree_spraycan' 
@@ -37,5 +37,6 @@ group :development do
   gem 'capistrano'
   gem 'mysql2'
   gem 'yaml_db'
+  gem 'ruby-debug19'
 end
 
