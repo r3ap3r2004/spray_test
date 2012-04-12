@@ -30,7 +30,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree.git
-  revision: fcbaa6bffa0ef407c822fbb4dd6964381fa7ac66
+  revision: 41a9ca4cdc0ca72a8f8188d03006659bd31c07a0
   branch: 1-1-stable
   specs:
     spree (1.1.0.rc1)

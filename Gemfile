@@ -15,7 +15,7 @@ end
 gem 'jquery-rails'
 
 gem 'spree', :git => 'git://github.com/spree/spree.git', :branch => '1-1-stable'
-
+# gem 'spree', :path => '../spree'
 
 # gem 'spree_spraycan', :path => '../spree_spraycan' 
 gem 'spree_spraycan', :git => 'git://github.com/railsdog/spree_spraycan.git'
