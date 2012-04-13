@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/railsdog/deface.git
-  revision: 6634c023fc21eeec66907c47ace6c797e8d86edb
+  revision: f876fdc7dd6befd662a9d083512239390100a88f
   branch: dsl
   specs:
     deface (0.8.0)
@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git://github.com/railsdog/spraycan.git
-  revision: 5e9e3931d7887ea848dd649beaa0f6c3e7d97b49
+  revision: d3e3c1a2b6eca8c072954e847ec31ffffd2d82e9
   specs:
     spraycan (0.3.0)
       acts_as_list (>= 0.1.2)
@@ -30,7 +30,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree.git
-  revision: 41a9ca4cdc0ca72a8f8188d03006659bd31c07a0
+  revision: f4176af6f3cb1774fb9636435a317a3c22dc9d6f
   branch: 1-1-stable
   specs:
     spree (1.1.0.rc1)
