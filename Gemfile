@@ -20,8 +20,8 @@ gem 'spree', :git => 'git://github.com/spree/spree.git', :branch => '1-1-stable'
 # gem 'spree_spraycan', :path => '../spree_spraycan' 
 gem 'spree_spraycan', :git => 'git://github.com/railsdog/spree_spraycan.git'
 
-gem 'spraycan', :path => '../spraycan'
-# gem 'spraycan', :git => 'git://github.com/railsdog/spraycan.git'
+# gem 'spraycan', :path => '../spraycan'
+gem 'spraycan', :git => 'git://github.com/railsdog/spraycan.git'
 
 # gem 'deface', :path => '../deface'
 gem 'deface', :git => 'git://github.com/railsdog/deface.git', :branch => 'dsl'
